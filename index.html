@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/style.css">
+    <!-- "Noto Sans JP", 'sans-serif' -->
+    <title>My Address</title>
+  </head>
+
+  <body>
+    <div class="container bg-gradient-to-tr from-gray-900 via-gray-800 to-neutral-900">
+
+      <div class="titulo">
+        <h1 class="text-6xl text-white font-light font-japa">My Address</h1>
+      </div>
+
+      <div class="descricao w-1/2 text-center">
+        <p class="text-lg text-slate-400 font-light font-japa">Informe um CEP, para nossa API (desenvolvida em <strong>Java</strong>) descobrir o endereço referente a ele. Além de descobrir mais informações que podem ser úteis.</p>
+      </div>
+
+      <div class="info flex gap-12 mt-12">
+        <input id="cep" class="bg-gray-700 w-60 rounded-md p-4 font-japa text-white" placeholder="12345678" required />
+        <button id="botao" class="text-1xl font-semibold font-japa text-blue-600 hover:text-white  bg-white hover:bg-blue-800 hover:border-2 border-blue-600 pt-5 pb-5 pl-8 pr-8 rounded-xl">Pesquisar</button>
+    </div>
+
+    <div class="respostaContainer">
+      <button id="botaoFechar" type="button" class="bg-black rounded-3xl p-2 text-red-600 hover:text-white hover:bg-red-600">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="resposta">
+        <p>Endereço: Estrada Mirandela</p>
+        <p>Complemento: Lado Ímpar</p>
+        <p>Bairro: Nilópolis</p>
+        <p>Estado: RJ</p>
+      </div>
+    </div>
+
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+
+</html>
