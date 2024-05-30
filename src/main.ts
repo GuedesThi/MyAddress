@@ -28,7 +28,7 @@ const keyMap: { [key in keyof Endereco]: string } = {
 /*------------------------------------------------------------------------------------------------------*/
 
 async function comunicao_api(cep: string) {
-  //const url: string = 'http://localhost:4545/?cep=' + cep;
+  //const url: string = 'http://localhost:4545/';
   const url: string = 'https://api-myaddress.onrender.com/';
 
   try {
